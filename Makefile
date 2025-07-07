@@ -74,6 +74,7 @@ endif
 CXXFLAGS	=	$(CFLAGS)
 
 LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
+LDFLAGS += -T$(CURDIR)/../wii.ld
 
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
